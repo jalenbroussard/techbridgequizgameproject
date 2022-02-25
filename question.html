@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Page</title>
+    <link rel="stylesheet" href="/style.css">
+    <script>
+        var countdown;
+        var timerInterval;
+        var arrayOfQuestions = []
+        const maxTime = 5 * 60 ; //time is in seconds
+        function setCountdownTimer() {
+            countdownTimer = maxTime
+        }
+        //when the person clicks the begin button the timer starts
+        //start timer
+        timerInterval = setInterval(updateTimer, 1000);
+        function updateTimer() {
+                countdownTimer = countdownTimer - 1;
+        }
+        //questions is asked
+        function SetupQuestions () {
+            let question1 = {
+                id: "questo",
+                question: "to select elements w/ specific class:",
+                answer1: ""
+            };
+        }
+
+
+        {
+        
+        arrayOfQuestions.push(question1);
+        arrayOfQuestions.push(question2);
+
+        console.log("SetupQuestions arrayofQuestions:", arrayOfQuestions);
+
+        }
+
+        function doQuestionForGame() {
+
+            for(let i = 0; i<arrayOfQuestions.length; i++) 
+        }
+
+        function showQuestion(questionindex) {
+            let questionSection = document.getElementId('question');
+            let newQuestion = document.createElement('div');
+            newQuestion.id = arrayOfQuestions[questionindex].id;
+            newQuestion.innerText = arrayofQuestions[questionindex].question;
+            questionSection.appendChild();
+            
+            
+                
+
+            }
+
+
+        }
+
+
+        
+        //if question is correct next question
+        
+        //if qustion incorrect time penalty then go to next question
+        //if answer is correct show points then go to next question
+        //once all questions have been answered give options
+        //once all questions have been answered give options to save score and exit
+        //if user chooses to save score show the scoreboard
+    </script>
+    
+</head>
+
+<body>
+
+    <div class="welcome">
+    <span style="text-align:left">Time Remaining</span>
+    <span style="text-align:right">Score:</span>
+
+    </div>
+
+    <div id="question">
+    <div>Question: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua </div>
+    <div id="answer 1">Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
+
+
+
+
+    </div>
+   
+   
+   
+    <div>
+
+        <p>Question: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua </p>
+
+   </div>
+    
+</body>
+</html>
